@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ComposeUserInterface</string>
+    <string name="celebrant_name">Sam</string>
+    <string name="title_activity_compose_article">ComposeArticleActivity</string>
 </resources>
