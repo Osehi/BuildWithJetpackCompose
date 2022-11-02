@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.* // ktlint-disable no-wildcard-imports
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -47,8 +47,8 @@ fun ComposeQuadrantApp() {
                 modifier = Modifier.weight(1f)
             )
             ComposableInfoCard(
-                title = stringResource(id = R.string.top_left_title),
-                description = stringResource(id = R.string.top_left_lower_description),
+                title = stringResource(id = R.string.top_right_title),
+                description = stringResource(id = R.string.top_right_description),
                 backgroundColor = Color.Yellow,
                 modifier = Modifier.weight(1f)
             )
