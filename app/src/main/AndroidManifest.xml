@@ -14,10 +14,10 @@
         android:theme="@style/Theme.ComposeUserInterface"
         tools:targetApi="31">
         <activity
-            android:name=".TaskCompletedActivity"
+            android:name=".ComposeQuadrantActivity"
             android:exported="true"
-            android:label="@string/title_activity_task_completed"
-            android:theme="@style/Theme.ComposeUserInterface" >
+            android:label="@string/title_activity_compose_quadrant"
+            android:theme="@style/Theme.ComposeUserInterface">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,17 +25,21 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".TaskCompletedActivity"
+            android:exported="true"
+            android:label="@string/title_activity_task_completed"
+            android:theme="@style/Theme.ComposeUserInterface">
+        </activity>
+        <activity
             android:name=".ComposeArticleActivity"
             android:exported="true"
             android:label="@string/title_activity_compose_article"
-            android:theme="@style/Theme.ComposeUserInterface">
-
-        </activity>
+            android:theme="@style/Theme.ComposeUserInterface"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.ComposeUserInterface"></activity>
+            android:theme="@style/Theme.ComposeUserInterface" />
     </application>
 
 </manifest>

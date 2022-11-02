@@ -3,4 +3,7 @@
     <string name="celebrant_name">Sam</string>
     <string name="title_activity_compose_article">ComposeArticleActivity</string>
     <string name="title_activity_task_completed">TaskCompletedActivity</string>
+    <string name="title_activity_compose_quadrant">ComposeQuadrantActivity</string>
+    <string name="top_left_title">Text composable</string>
+    <string name="top_left_lower_description">Displays text and follows Material Design guidelines.</string>
 </resources>
