@@ -8,4 +8,9 @@
     <string name="top_left_lower_description">Displays text and follows Material Design guidelines.</string>
     <string name="top_right_title">Image composable</string>
     <string name="top_right_description">Creates a composable that lays out and draws a given Painter class object.</string>
+    <string name="bottom_left_title">Row composable</string>
+    <string name="bottom_left_description">A layout composable that places its children in a horizontal sequence.</string>
+    <string name="bottom_right_title">Column composable</string>
+    <string name="bottom_right_description">A layout composable that places its children in a vertical sequence.
+</string>
 </resources>

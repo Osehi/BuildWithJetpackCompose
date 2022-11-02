@@ -53,6 +53,20 @@ fun ComposeQuadrantApp() {
                 modifier = Modifier.weight(1f)
             )
         }
+        Row(Modifier.weight(1f)) {
+            ComposableInfoCard(
+                title = stringResource(id = R.string.bottom_left_title),
+                description = stringResource(id = R.string.bottom_left_description),
+                backgroundColor = Color.Cyan,
+                modifier = Modifier.weight(1f)
+            )
+            ComposableInfoCard(
+                title = stringResource(id = R.string.top_right_title),
+                description = stringResource(id = R.string.top_right_description),
+                backgroundColor = Color.LightGray,
+                modifier = Modifier.weight(1f)
+            )
+        }
     }
 }
 
