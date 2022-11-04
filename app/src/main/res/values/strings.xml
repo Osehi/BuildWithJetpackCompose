@@ -11,7 +11,8 @@
     <string name="bottom_left_title">Row composable</string>
     <string name="bottom_left_description">A layout composable that places its children in a horizontal sequence.</string>
     <string name="bottom_right_title">Column composable</string>
-    <string name="bottom_right_description">A layout composable that places its children in a vertical sequence.
-</string>
+    <string name="bottom_right_description">A layout composable that places its children in a vertical sequence.</string>
     <string name="title_activity_business_card">BusinessCardActivity</string>
+    <string name="business_name">Jennifer Doe</string>
+    <string name="business_name_motto">Android Developer Extraordinaire</string>
 </resources>
