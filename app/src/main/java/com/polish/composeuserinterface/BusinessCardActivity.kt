@@ -3,9 +3,7 @@ package com.polish.composeuserinterface
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -16,9 +14,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.polish.composeuserinterface.ui.ui.theme.ComposeUserInterfaceTheme
 
@@ -32,7 +30,7 @@ class BusinessCardActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    NameOfBrand()
+                    MergerBusinessCardComponent()
                 }
             }
         }
@@ -45,10 +43,7 @@ fun BusinessCardApp() {
 
 @Composable
 fun NameOfBrand() {
-    Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ) {
+    Column() {
         Icon(painter = painterResource(id = R.drawable.ic_android_logo), contentDescription = null)
         Text(
             text = stringResource(id = R.string.business_name),
@@ -65,6 +60,47 @@ fun NameOfBrand() {
 
 @Composable
 fun ContactOfBrand() {
+    Column() {
+        Row() {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_phone),
+                contentDescription = null
+            )
+            Text(
+                stringResource(id = R.string.phone_number)
+            )
+        }
+        Row() {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_share),
+                contentDescription = null
+            )
+            Text(
+                stringResource(id = R.string.share)
+            )
+        }
+        Row() {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_email),
+                contentDescription = null
+            )
+            Text(
+                stringResource(id = R.string.email)
+            )
+        }
+    }
+}
+@Composable
+fun MergerBusinessCardComponent() {
+    Column(
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+
+    ) {
+        NameOfBrand()
+        Spacer(modifier = Modifier.height(128.dp))
+        ContactOfBrand()
+    }
 }
 
 @Composable
@@ -76,6 +112,6 @@ fun Greeting5(name: String) {
 @Composable
 fun DefaultPreview5() {
     ComposeUserInterfaceTheme {
-        NameOfBrand()
+        MergerBusinessCardComponent()
     }
 }
