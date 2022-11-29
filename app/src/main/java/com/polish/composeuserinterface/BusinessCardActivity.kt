@@ -3,7 +3,7 @@ package com.polish.composeuserinterface
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.* // ktlint-disable no-wildcard-imports
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -43,7 +43,9 @@ fun BusinessCardApp() {
 
 @Composable
 fun NameOfBrand() {
-    Column() {
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
         Icon(painter = painterResource(id = R.drawable.ic_android_logo), contentDescription = null)
         Text(
             text = stringResource(id = R.string.business_name),
